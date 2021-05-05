@@ -1,0 +1,22 @@
+Step I: Create three files:
+
+- requirements.txt
+
+- runtime.txt
+python-3.8.6
+
+- Procfile
+web: voila --port=$PORT --no-browser app.ipynb
+
+Step II: Create a git repo.
+
+Step III: Add/commit/push the above three files.
+
+Step IV: Add/commit/push app.ipynb.
+
+Step V: Install Heroku CLI
+
+Step VI: Run below three commands in order
+heroku login
+heroku create
+git push heroku main
